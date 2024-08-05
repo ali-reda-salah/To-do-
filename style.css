@@ -1,0 +1,97 @@
+/* Set the font for the entire page and define basic layout and background color */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+/* Style the main container */
+#container {
+background-color: #f7e4cc;
+width: 50%;
+padding: 20px;
+border-radius: 20px;
+text-align: center;
+}
+
+/* Style the header section */
+#todo {
+    background-color: #fec579;         /* Light orange background */
+    border-radius: 10px;               /* Rounded corners */
+    padding: 10px;                     /* Space inside the header */
+    margin-bottom: 20px;               /* Space below the header */
+}
+
+#todo p {
+    font-size: 24px;                   /* Larger font size for the title */
+    font-weight: bold;                 /* Bold text for emphasis */
+    margin: 0;                         /* Remove default margin */
+}
+
+/* Style the task input box */
+#taskInput {
+    width: 100%;                       /* Full width input */
+    padding: 10px;                     /* Padding inside the input */
+    margin-bottom: 20px;               /* Space below the input */
+    border: 1px solid #ccc;            /* Light grey border */
+    border-radius: 5px;                /* Slightly rounded corners */
+    box-sizing: border-box;            /* Include padding and border in element's total width and height */
+    font-size: 16px;                   /* Font size for the input text */
+}
+
+/* Remove default list styles and padding */
+ul#addtask {
+    list-style-type: none;             /* Remove default list bullets */
+    padding: 0;                        /* Remove default padding */
+}
+
+/* Style each list item */
+ul#addtask li {
+    display: flex;
+    background-color: #fcf7f1;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Change background color on hover */
+ul#addtask li:hover {
+    background-color: #9bdf90;         /* Slightly darker blue on hover */
+}
+
+/* Style the label in each list item */
+ul#addtask label {
+    margin-left: 10px;                 /* Space between checkbox and label */
+    font-size: 16px;                   /* Font size for label text */
+}
+
+/* Style for buttons */
+button {
+    width: 48%;                        /* Each button takes up nearly half the container width */
+    padding: 10px;                     /* Space inside the button */
+    margin: 5px 1%;                    /* Small space around each button */
+    border: none;                      /* Remove default border */
+    border-radius: 5px;                /* Rounded corners */
+    font-size: 16px;                   /* Font size for button text */
+    cursor: pointer;                   /* Pointer cursor on hover */
+}
+
+/* Specific styles for the 'Add' button */
+#add {
+    background-color: #4caf50;         /* Green background */
+    color: white;                      /* White text */
+}
+
+/* Specific styles for the 'Remove' button */
+#remove {
+    background-color: #f44336;         /* Red background */
+    color: white;                      /* White text */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    opacity: 0.8;                      /* Slightly transparent on hover */
+}
